@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="main_cal">
+            <div class="top">
+                <H2 class="top_cal">CALCULATOR</H2>
+              <input type="text" id="text" readonly>
+            </div>
+            <div class="boxes">
+
+                <div class="uper">
+                    <button class="btn-imp" onclick="clearinput()">AC</button>
+                    <button class="btn-imp" onclick="numbers('%')">%</button>
+                    <button class="btn-imp" onclick="onebehind()"><i class="fa-solid fa-delete-left"></i></button>
+                    <button class="btn-imp" onclick="numbers('/')"><i class="fa-solid fa-divide"></i></button>
+                </div>
+                <div class="dmas">
+                    <button class="btn" onclick="numbers(7)">7</button>
+                    <button class="btn" onclick="numbers(8)">8</button>
+                    <button class="btn" onclick="numbers(9)">9</button>
+                    <button class="btn-imp" onclick="numbers('+')"><i class="fa-solid fa-plus"></i></button>
+                    <button class="btn" onclick="numbers(4)">4</button>
+                    <button class="btn" onclick="numbers(5)">5</button>
+                    <button class="btn" onclick="numbers(6)">6</button>
+                    <button class="btn-imp" onclick="numbers('-')"><i class="fa-solid fa-minus"></i></button>
+                    <button class="btn" onclick="numbers(1)">1</button>
+                    <button class="btn" onclick="numbers(2)">2</button>
+                    <button class="btn" onclick="numbers(3)">3</button>
+                    <button class="btn-imp" onclick="numbers('*')"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="btn-zero" onclick="numbers(0)" >0</button>
+                    <button class="btn-imp" onclick="numbers('.')">.</button>
+                    <button class="btn-extra" onclick="result()"><i class="fa-solid fa-equals"></i></button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
